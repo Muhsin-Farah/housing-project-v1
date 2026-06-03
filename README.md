@@ -9,7 +9,9 @@ A Python machine learning project for housing data analysis using pandas, NumPy,
 - Build regression models with scikit-learn
 - Visualize results with matplotlib
 
-## Data Processing Pipeline
+## Pipeline Overview
+
+This section describes the workflow for this project. It shows how raw housing data flows through CPI adjustment, preprocessing, storage, model training, and visualization.
 
 1. **Raw Data** (`data/sample_housing.csv`): Original housing data
 2. **CPI Reference** (`data/cpi.csv`): Consumer Price Index for inflation adjustment
@@ -20,6 +22,8 @@ A Python machine learning project for housing data analysis using pandas, NumPy,
 4. **Stored Data** (`housing.db`): Final cleaned, adjusted data for ML model
 5. **Model Training** (`src/model.py`): Trains regression models on processed data
 6. **Visualization** (`src/visualization.py`): Charts and performance metrics
+
+> Note: the above is the project workflow. See the `Run the project` section below for the commands to execute.
 
 ### Why CPI Adjustment?
 Housing prices vary by year due to inflation. Adjusting all prices to a base year 
@@ -50,7 +54,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Usage
+## Run the project
 
 ### Process and store data in SQLite:
 ```bash
